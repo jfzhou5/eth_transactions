@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="" />
+    <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ipo/ipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ipo/ipo.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +22,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/templates/user/register.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/templates/index/transactions.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -26,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/templates/user/login.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1ZqxwUXm9yMPUhdwK8USbTEJCkj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,7 +41,9 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -175,7 +184,7 @@
       <workItem from="1587525249009" duration="33103000" />
       <workItem from="1587605324994" duration="22529000" />
       <workItem from="1587652128053" duration="7944000" />
-      <workItem from="1587694495620" duration="6552000" />
+      <workItem from="1587694495620" duration="7222000" />
     </task>
     <servers />
   </component>
@@ -192,30 +201,30 @@
     </state>
     <state x="251" y="115" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585581185189" />
     <state x="294" y="136" key="FileChooserDialogImpl/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587647231613" />
-    <state width="1601" height="386" key="GridCell.Tab.0.bottom" timestamp="1587700727956">
+    <state width="1601" height="386" key="GridCell.Tab.0.bottom" timestamp="1587731642857">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.bottom/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587700727956" />
-    <state width="1601" height="386" key="GridCell.Tab.0.center" timestamp="1587700727956">
+    <state width="1601" height="386" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
+    <state width="1601" height="386" key="GridCell.Tab.0.center" timestamp="1587731642857">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.center/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587700727955" />
-    <state width="1601" height="386" key="GridCell.Tab.0.left" timestamp="1587700727955">
+    <state width="1601" height="386" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
+    <state width="1601" height="386" key="GridCell.Tab.0.left" timestamp="1587731642856">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.left/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587700727955" />
-    <state width="1601" height="386" key="GridCell.Tab.0.right" timestamp="1587700727956">
+    <state width="1601" height="386" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642856" />
+    <state width="1601" height="386" key="GridCell.Tab.0.right" timestamp="1587731642857">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.right/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587700727956" />
+    <state width="1601" height="386" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
     <state x="4" y="4" key="SettingsEditor" timestamp="1587525348712">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

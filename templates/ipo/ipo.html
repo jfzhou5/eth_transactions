@@ -21,7 +21,9 @@
         td {
             text-align: center;
         }
-
+        h1{
+            margin: 40px 0px;
+        }
     </style>
     <script>
 
@@ -36,7 +38,7 @@
                 pager: '#page',
                 rowNum: 4,
                 viewrecords: true,
-                colNames: ["股票代码", "公司名称", "发行数量（万股）", "发行价格", '发行日'],   //表格标题
+                colNames: ["股票代码", "公司名称", "发行数量（股）", "发行价格", '发行日'],   //表格标题
                 colModel: [
                     {name: 'stock_id'},
                     {name: 'company_name'},
@@ -49,11 +51,11 @@
 
         function ipo_submit() {
             $.ajax({
-                url:'{% url 'ipo:ipo_submit' %}',
-                type:'post',
-                data:$('#ipo_form').serialize(),
-                success:function (msg) {
-                    if (msg.status === 1){
+                url: '{% url 'ipo:ipo_submit' %}',
+                type: 'post',
+                data: $('#ipo_form').serialize(),
+                success: function (msg) {
+                    if (msg.status === 1) {
                         $('#myModal1').modal('show');
                         $('#ipo_table').trigger("reloadGrid");
                     }
@@ -72,7 +74,7 @@
                 <h1>
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     基于以太坊的证券交易系统 &nbsp&nbsp
-                    {#                    <small>1607084137周俊峰</small>#}
+                    <small>1607084137周俊峰</small>
                 </h1>
             </div>
             <nav class="navbar navbar-default" role="navigation">
@@ -100,7 +102,7 @@
                     </form>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="{% url 'user:user_stock' %}">{{euser.name}}</a>
+                            <a href="{% url 'user:user_stock' %}">{{ euser.name }}</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>个人中心</b><strong
@@ -157,7 +159,7 @@
                     <p class="help-block"></p>
                 </div>
                 <div class="form-group">
-                    <label for="ipo_count">发行数量（万份）</label>
+                    <label for="ipo_count">发行数量（份）</label>
                     <input type="text" name="ipo_count" class="form-control" placeholder="请输入发行数量">
                     <p class="help-block">
                         <small>募集资金的主要用于公司主营业务，应当符合国家产业政策、投资管理、环境保护、土地管理以及其他法律、法规和规章的规定。</small>
