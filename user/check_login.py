@@ -8,7 +8,12 @@ class CheckLoginMiddleware(MiddlewareMixin):
     """
 
     def process_request(self, request):
-        if request.session.get('euser_id'):
+        print(f'request.path_info is    {request.path_info}')
+        if request.path_info == '/user/login/' or '/user/login_form/':
             pass
         else:
-            return redirect('user:login')
+            if request.session.get('euser_id'):
+                pass
+            else:
+                return redirect('user:login')
+
