@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user/check_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eth_transaction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eth_transaction/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ipo/ipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ipo/ipo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Solidity Contract" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -31,7 +37,9 @@
     <setting file="file://$PROJECT_DIR$/templates/user/login.html" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1ZqxwUXm9yMPUhdwK8USbTEJCkj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -46,7 +54,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -185,6 +193,7 @@
       <workItem from="1587652128053" duration="7944000" />
       <workItem from="1587694495620" duration="8337000" />
       <workItem from="1587780260208" duration="14000" />
+      <workItem from="1587961008925" duration="3163000" />
     </task>
     <servers />
   </component>
@@ -201,43 +210,43 @@
     </state>
     <state x="251" y="115" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585581185189" />
     <state x="294" y="136" key="FileChooserDialogImpl/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587647231613" />
-    <state width="1601" height="172" key="GridCell.Tab.0.bottom" timestamp="1587780191995">
+    <state width="1601" height="308" key="GridCell.Tab.0.bottom" timestamp="1587977344874">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.bottom/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="172" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
-    <state width="1601" height="172" key="GridCell.Tab.0.center" timestamp="1587780191995">
+    <state width="1601" height="308" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977344874" />
+    <state width="1601" height="308" key="GridCell.Tab.0.center" timestamp="1587977344874">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.center/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="172" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
-    <state width="1601" height="172" key="GridCell.Tab.0.left" timestamp="1587780191994">
+    <state width="1601" height="308" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977344874" />
+    <state width="1601" height="308" key="GridCell.Tab.0.left" timestamp="1587977344874">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.left/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="172" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191994" />
-    <state width="1601" height="172" key="GridCell.Tab.0.right" timestamp="1587780191995">
+    <state width="1601" height="308" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977344874" />
+    <state width="1601" height="308" key="GridCell.Tab.0.right" timestamp="1587977344874">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.right/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="172" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
-    <state x="4" y="4" key="SettingsEditor" timestamp="1587525348712">
+    <state width="1601" height="308" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977344874" />
+    <state x="4" y="4" key="SettingsEditor" timestamp="1587977433659">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="3" y="3" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585725738867" />
-    <state x="4" y="4" key="SettingsEditor/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587525348712" />
+    <state x="4" y="4" key="SettingsEditor/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977433659" />
     <state x="237" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587563058658">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="237" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587563058658" />
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1587520720643">
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1587977853150">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587520720643" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977853150" />
     <state x="522" y="346" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1587731980060">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

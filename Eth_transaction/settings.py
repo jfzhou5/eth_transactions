@@ -126,7 +126,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 web3 = Web3(HTTPProvider("http://localhost:7545"))
-CONTRACT_ADDRESS = "0xaa680aa9ee562dfddaedb43318600ea7620a94cc"
+CONTRACT_ADDRESS = "0xdfd008a6fbe3963e2b21f505061edc1c9cd01005"
 ABI = """
 [
 	{

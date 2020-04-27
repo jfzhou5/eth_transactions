@@ -2,8 +2,6 @@ from django.core.paginator import Paginator
 from django.db import transaction
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-
-# Create your views here.
 from django.views.decorators.csrf import csrf_exempt
 from eth_account import Account
 
@@ -14,6 +12,9 @@ from util.md5_password import encode_md5
 
 
 def user_stock(request):
+    """
+    获取单个用户的地址、私钥、余额，所持证券的信息
+    """
     private_key = request.session.get('private_key')
     address = request.session.get('address')
     name = request.session.get('address')
@@ -29,6 +30,9 @@ def user_stock(request):
 
 
 def get_list(request):
+    """
+    获取jqgrid的信息：用户所持股票的详情信息
+    """
     address = request.session.get('address')
     private_key = request.session.get('private_key')
     data = []
@@ -40,7 +44,6 @@ def get_list(request):
     })
     signed_txn = web3.eth.account.signTransaction(txn_dict, private_key=private_key)
     result_hash = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
-    # action.functions.get_stockers_all_stocks(web3.toChecksumAddress(address)).call()
     id_count = action.functions.get_id_counts().call()
     stocks = list(zip(id_count[0], id_count[1]))
     print(stocks)
@@ -74,17 +77,25 @@ def get_list(request):
 
 @csrf_exempt
 def register(request):
+    """
+    渲染注册界面
+    """
     return render(request, 'user/register.html')
 
 
 @csrf_exempt
 def register_form(request):
+    """
+    注册逻辑的实现
+    """
     try:
         name = request.POST.get('name')
         password = request.POST.get('password')
         ac = Account.create()
         with transaction.atomic():
-            Euser.objects.create(private_key=str(ac._key_obj), address=ac.address, name=name,
+            Euser.objects.create(private_key=str(ac._key_obj),
+                                 address=ac.address,
+                                 name=name,
                                  password=encode_md5(password))
     except Exception as tips:
         print(tips)
@@ -93,15 +104,21 @@ def register_form(request):
 
 
 def login(request):
+    """渲染登录界面"""
     return render(request, 'user/login.html')
 
 
 def check_user(request):
+    """注册时，检查用户名是否重复"""
     return HttpResponse()
 
 
 @csrf_exempt
 def login_form(request):
+    """
+    登录逻辑的实现
+    登录成功时，将私钥，地址，用户id，用户名，存入session中
+    """
     name = request.POST.get('name')
     password = request.POST.get('password')
     euser = Euser.objects.filter(name=name, password=encode_md5(password))
@@ -117,17 +134,20 @@ def login_form(request):
 
 @csrf_exempt
 def sell(request):
+    """
+    抛售股票的逻辑
+    """
     stock_id = request.POST.get('sell_stock_id')
     stock_count = request.POST.get('sell_stock_count')
     stock_price = request.POST.get('sell_stock_price')
-    print(stock_id,stock_count,stock_price)
+    print(stock_id, stock_count, stock_price)
     try:
         nonce = web3.eth.getTransactionCount(web3.toChecksumAddress(request.session.get('address')))
         txn_dict = action.functions.sell(int(stock_id), int(stock_count), int(stock_price)).buildTransaction({
             'nonce': nonce,
             "from": web3.toChecksumAddress(request.session.get('address')),
         })
-        signed_txn = web3.eth.account.signTransaction(txn_dict,private_key=request.session.get('private_key'))
+        signed_txn = web3.eth.account.signTransaction(txn_dict, private_key=request.session.get('private_key'))
         result_hash = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
     except Exception as tips:
         print(tips)
