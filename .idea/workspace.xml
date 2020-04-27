@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ipo/ipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ipo/ipo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Eth_transaction/templates/index/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="sjf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_wifi_passwd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Eth_transaction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,7 +74,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/sjf.py" />
+      <option name="SCRIPT_NAME" value="F:\桌面\Eth_transaction\util\get_wifi_passwd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,7 +155,7 @@
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.sjf" />
+        <item itemvalue="Python.get_wifi_passwd" />
         <item itemvalue="Python.views" />
       </list>
     </recent_temporary>
@@ -184,7 +183,8 @@
       <workItem from="1587525249009" duration="33103000" />
       <workItem from="1587605324994" duration="22529000" />
       <workItem from="1587652128053" duration="7944000" />
-      <workItem from="1587694495620" duration="7222000" />
+      <workItem from="1587694495620" duration="8337000" />
+      <workItem from="1587780260208" duration="14000" />
     </task>
     <servers />
   </component>
@@ -201,30 +201,30 @@
     </state>
     <state x="251" y="115" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585581185189" />
     <state x="294" y="136" key="FileChooserDialogImpl/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587647231613" />
-    <state width="1601" height="386" key="GridCell.Tab.0.bottom" timestamp="1587731642857">
+    <state width="1601" height="172" key="GridCell.Tab.0.bottom" timestamp="1587780191995">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.bottom/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
-    <state width="1601" height="386" key="GridCell.Tab.0.center" timestamp="1587731642857">
+    <state width="1601" height="172" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
+    <state width="1601" height="172" key="GridCell.Tab.0.center" timestamp="1587780191995">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.center/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
-    <state width="1601" height="386" key="GridCell.Tab.0.left" timestamp="1587731642856">
+    <state width="1601" height="172" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
+    <state width="1601" height="172" key="GridCell.Tab.0.left" timestamp="1587780191994">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.left/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642856" />
-    <state width="1601" height="386" key="GridCell.Tab.0.right" timestamp="1587731642857">
+    <state width="1601" height="172" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191994" />
+    <state width="1601" height="172" key="GridCell.Tab.0.right" timestamp="1587780191995">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.right/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="386" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731642857" />
+    <state width="1601" height="172" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587780191995" />
     <state x="4" y="4" key="SettingsEditor" timestamp="1587525348712">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -238,6 +238,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587520720643" />
+    <state x="522" y="346" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1587731980060">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="522" y="346" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587731980060" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Eth_transaction$sjf.coverage" NAME="sjf Coverage Results" MODIFIED="1587548144834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
