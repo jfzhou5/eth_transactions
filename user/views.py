@@ -141,6 +141,8 @@ def sell(request):
     stock_count = request.POST.get('sell_stock_count')
     stock_price = request.POST.get('sell_stock_price')
     print(stock_id, stock_count, stock_price)
+
+
     try:
         nonce = web3.eth.getTransactionCount(web3.toChecksumAddress(request.session.get('address')))
         txn_dict = action.functions.sell(int(stock_id), int(stock_count), int(stock_price)).buildTransaction({
@@ -150,6 +152,21 @@ def sell(request):
         signed_txn = web3.eth.account.signTransaction(txn_dict, private_key=request.session.get('private_key'))
         result_hash = web3.eth.sendRawTransaction(signed_txn.rawTransaction)
     except Exception as tips:
+        print(tips)
+        return JsonResponse({'status': 0})
+
+    address = request.session.get('address')
+    balance = web3.fromWei(web3.eth.getBalance(address, 'latest'), 'ether')
+    return JsonResponse({'status': 1, 'balance': str(balance)})
+
+
+def logout(request):
+    """注销逻辑"""
+    print('logout')
+    try:
+        request.session.flush()
+        print(request.session.get('address'))
+    except Exception or BaseException as tips:
         print(tips)
         return JsonResponse({'status': 0})
     return JsonResponse({'status': 1})

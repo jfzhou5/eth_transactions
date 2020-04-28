@@ -9,11 +9,11 @@ class CheckLoginMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
         print(f'request.path_info is    {request.path_info}')
-        if request.path_info == '/user/login/' or '/user/login_form/':
+        if request.path_info == '/user/login/' or request.path_info == '/user/login_form/':
             pass
         else:
-            if request.session.get('euser_id'):
+            if request.session.get('address'):
+                print(f"address is {request.session.get('address')}")
                 pass
             else:
                 return redirect('user:login')
-

@@ -4,7 +4,16 @@
     <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eth_transaction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eth_transaction/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/transactions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ipo/ipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ipo/ipo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/user_stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/user_stock.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/check_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/check_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +54,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
@@ -191,7 +201,8 @@
       <workItem from="1587780260208" duration="14000" />
       <workItem from="1587961008925" duration="3358000" />
       <workItem from="1587978393529" duration="88000" />
-      <workItem from="1587978694884" duration="508000" />
+      <workItem from="1587978694884" duration="6523000" />
+      <workItem from="1587986837433" duration="12559000" />
     </task>
     <servers />
   </component>
@@ -208,30 +219,34 @@
     </state>
     <state x="251" y="115" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585581185189" />
     <state x="294" y="136" key="FileChooserDialogImpl/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587647231613" />
-    <state width="1601" height="308" key="GridCell.Tab.0.bottom" timestamp="1587978915204">
+    <state width="1601" height="150" key="GridCell.Tab.0.bottom" timestamp="1587998124608">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.bottom/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="308" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587978915204" />
-    <state width="1601" height="308" key="GridCell.Tab.0.center" timestamp="1587978915204">
+    <state width="1601" height="150" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998124608" />
+    <state width="1601" height="150" key="GridCell.Tab.0.center" timestamp="1587998124607">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.center/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="308" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587978915204" />
-    <state width="1601" height="308" key="GridCell.Tab.0.left" timestamp="1587978915204">
+    <state width="1601" height="150" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998124607" />
+    <state width="1601" height="150" key="GridCell.Tab.0.left" timestamp="1587998124607">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.left/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="308" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587978915204" />
-    <state width="1601" height="308" key="GridCell.Tab.0.right" timestamp="1587978915204">
+    <state width="1601" height="150" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998124607" />
+    <state width="1601" height="150" key="GridCell.Tab.0.right" timestamp="1587998124607">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state width="1367" height="223" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587575091901" />
     <state width="1367" height="103" key="GridCell.Tab.0.right/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
-    <state width="1601" height="308" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587978915204" />
+    <state width="1601" height="150" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998124607" />
+    <state x="650" y="145" key="RollbackChangesDialog" timestamp="1587999828651">
+      <screen x="0" y="0" width="1600" height="870" />
+    </state>
+    <state x="650" y="145" key="RollbackChangesDialog/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587999828651" />
     <state x="4" y="4" key="SettingsEditor" timestamp="1587977433659">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -241,10 +256,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="237" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587563058658" />
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1587977853150">
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1587998227952">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587977853150" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998227952" />
     <state x="522" y="346" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1587731980060">
       <screen x="0" y="0" width="1600" height="870" />
     </state>

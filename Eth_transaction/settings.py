@@ -127,7 +127,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 web3 = Web3(HTTPProvider("http://localhost:7545"))
-CONTRACT_ADDRESS = "0xdfd008a6fbe3963e2b21f505061edc1c9cd01005"
+
+CONTRACT_ADDRESS = "0x0f69ac210d718f4d72cf909322bc98ca56968414"
+
 ABI = """
 [
 	{
@@ -684,3 +686,5 @@ ABI = """
 action = web3.eth.contract(address=web3.toChecksumAddress(CONTRACT_ADDRESS), abi=ABI)
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# SESSION_SAVE_EVERY_REQUEST = True

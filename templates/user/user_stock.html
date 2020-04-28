@@ -72,14 +72,32 @@
                 data: $('#sell_form').serialize(),
                 success: function (msg) {
                     if (msg.status === 1) {
-                        alert('抛售成功');
+                        alert('已进入抛售队列!!!!');
                         $('#myModal1').modal('hide');
+                        console.log(msg);
+                        $('#balance').html(msg.balance);
                         $('#user_stock_table').trigger("reloadGrid");
                     } else {
-                        alert('抛售成功')
+                        alert('抛售error!!!!')
                     }
                 }
             })
+        }
+
+        function logout() {
+            let logout_confirm = confirm('确认退出？？？？？')
+            console.log(logout_confirm)
+            if (logout_confirm) {
+                $.ajax({
+                    url: '{% url 'user:logout' %}',
+                    type: 'get',
+                    success: function (msg) {
+                        if (msg.status === 1) {
+                            location.href = '{% url 'user:login' %}'
+                        }
+                    }
+                })
+            }
         }
     </script>
 </head>
@@ -111,12 +129,12 @@
                             <a href="{% url 'ipo:ipo_index' %}"><b>&nbsp&nbsp&nbspIPO&nbsp</b></a>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="请输入股票代码"/>
-                        </div>
-                        <button type="submit" class="btn btn-default">查询</button>
-                    </form>
+{#                    <form class="navbar-form navbar-left" role="search">#}
+{#                        <div class="form-group">#}
+{#                            <input type="text" class="form-control" placeholder="请输入股票代码"/>#}
+{#                        </div>#}
+{#                        <button type="submit" class="btn btn-default">查询</button>#}
+{#                    </form>#}
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="{% url 'user:user_stock' %}">{{ euser.name }}</a>
@@ -136,22 +154,21 @@
                                 <li>
                                     <a href="{% url 'user:user_stock' %}">账户余额</a>
                                 </li>
-
-                                {#                                <li>#}
-                                {#                                    <a href="#">Separated link</a>#}
-                                {#                                </li>#}
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="javascript:void(0)" onclick="logout()">注销</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-
             </nav>
         </div>
     </div>
     <div class="row " style="height: 50px;font-size: 20px">
         <div class="col-md-2"></div>
         <div class="col-md-2">所持ETH:</div>
-        <div class="col-md-8"><span class="text-primary">{{ euser.balance }}</span>ETH</div>
+        <div class="col-md-8"><span class="text-primary" id="balance">{{ euser.balance }}</span>ETH</div>
     </div>
     <div class="row " style="height: 50px;font-size: 20px">
         <div class="col-md-2"></div>

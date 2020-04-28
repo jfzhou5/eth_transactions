@@ -6,9 +6,12 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
+from redis import Redis
 
 from Eth_transaction.settings import action, web3
 from stock.models import IPO
+
+red = Redis(host='127.0.0.1', port=6379)
 
 
 def index(request):
@@ -25,11 +28,13 @@ def get_buys(request):
     """获取单页的买入队列信息"""
     buys_index = action.functions.get_buys_index().call()
     print(f"buys_index:{buys_index}")
+
     buys = []
+    red.delete('buys')
     for i in range(buys_index):
         one = action.functions.get_buys(i).call()
         if one[1]:
-            buys.append({
+            a = {
                 'trans_addr': one[0],
                 'stock_id': one[1],
                 'stock_count': one[2],
@@ -37,15 +42,15 @@ def get_buys(request):
                 'category': '待抛售',
                 'buys_index': i,
                 'company_name': IPO.objects.get(stock_id=one[1]).company_name
-            })
-    request.session['buys'] = buys
+            }
+            buys.append(a)
+            red.lpush('buys', json.dumps(a))
+
     rows = request.GET.get('rows', 4)
     page = request.GET.get('page', 1)
-    print(page, rows)
     paginator = Paginator(buys, int(rows))
     try:
         rows = list(paginator.page(page).object_list)
-        print(paginator.page(page).object_list)
     except Exception as tips:
         print(tips)
         rows = list(paginator.page(int(page) - 1).object_list)
@@ -62,12 +67,12 @@ def get_buys(request):
 
 def get_sells(request):
     sells_index = action.functions.get_sells_index().call()
-    print(f"sells_index:{sells_index}")
     sells = []
+    red.delete('sells')
     for i in range(sells_index):
         one = action.functions.get_sells(i).call()
         if one[1]:
-            sells.append({
+            a = {
                 'trans_addr': one[0],
                 'stock_id': one[1],
                 'stock_count': one[2],
@@ -75,8 +80,10 @@ def get_sells(request):
                 'category': '待买入',
                 'sells_index': i,
                 'company_name': IPO.objects.get(stock_id=one[1]).company_name
-            })
-    request.session['sells'] = sells
+            }
+            sells.append(a)
+            red.lpush('sells', json.dumps(a))
+
     rows = request.GET.get('rows', 4)
     page = request.GET.get('page', 1)
     paginator = Paginator(sells, int(rows))
@@ -93,19 +100,22 @@ def get_sells(request):
         'records': paginator.count,
         'rows': rows
     }
+    print(sells)
     return JsonResponse(page_data, safe=False)
 
 
 def buy(request):
+    """抛出队列  购买逻辑"""
     sell_index = request.GET.get('sells_index')
-    sells = request.session.get('sells')
-    print(sell_index, sells)
+    sells = [json.loads(i) for i in red.lrange('sells', 0, -1)]
+    print('index.buy()', sell_index, sells)
+
+
     for i in sells:
         if i.get('sells_index') == int(sell_index):
             stock_id = i.get('stock_id')
             stock_count = i.get('stock_count')
             stock_price = i.get('stock_price')
-            print(stock_id, stock_count, stock_price)
     try:
         nonce = web3.eth.getTransactionCount(web3.toChecksumAddress(request.session.get('address')))
         txn_dict = action.functions.buy(int(stock_id), int(stock_count), int(stock_price)).buildTransaction({
@@ -119,20 +129,19 @@ def buy(request):
     except Exception as tips:
         print(tips)
         return JsonResponse({'status': 0})
-
     return JsonResponse({'status': 1})
 
 
 def sell(request):
+    """买入队列 抛出逻辑"""
     buy_index = request.GET.get('buys_index')
-    buys = request.session.get('buys')
-    print(buy_index, buys)
+    buys = [json.loads(i) for i in red.lrange('buys', 0, -1)]
+    print('index.sell()', buy_index, buys)
     for i in buys:
         if i.get('buys_index') == int(buy_index):
             stock_id = i.get('stock_id')
             stock_count = i.get('stock_count')
             stock_price = i.get('stock_price')
-            print(stock_id, stock_count, stock_price)
     try:
         nonce = web3.eth.getTransactionCount(web3.toChecksumAddress(request.session.get('address')))
         txn_dict = action.functions.sell(int(stock_id), int(stock_count), int(stock_price)).buildTransaction({
