@@ -80,7 +80,7 @@
                     // 获取id为loginForm的表单数据
                     data: $("#login_form").serialize(),
                     success: function (msg) {
-                        if (msg.status) location.href = "{% url 'index:index' %}"
+                        if (msg.status) location.href = "{% url 'index:transactions' %}"
                         else alert('登陆失败')
                     }
                 });

@@ -4,16 +4,7 @@
     <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eth_transaction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Eth_transaction/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/transactions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ipo/ipo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ipo/ipo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/user_stock.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/user_stock.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/check_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/check_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +193,7 @@
       <workItem from="1587961008925" duration="3358000" />
       <workItem from="1587978393529" duration="88000" />
       <workItem from="1587978694884" duration="6523000" />
-      <workItem from="1587986837433" duration="12559000" />
+      <workItem from="1587986837433" duration="15161000" />
     </task>
     <servers />
   </component>
