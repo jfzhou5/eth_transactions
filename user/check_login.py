@@ -9,7 +9,8 @@ class CheckLoginMiddleware(MiddlewareMixin):
 
     def process_request(self, request):
         print(f'request.path_info is    {request.path_info}')
-        if request.path_info == '/user/login/' or request.path_info == '/user/login_form/':
+        if request.path_info == '/user/login/' or request.path_info == '/user/login_form/' \
+                or request.path_info == '/user/register/':
             pass
         else:
             if request.session.get('address'):
