@@ -81,3 +81,14 @@ def ipo_submit(request):
         print(tips)
         return JsonResponse({'status': 0})
     return JsonResponse({'status': 1})
+
+
+def get_ipo_info(request):
+    try:
+        stock_id = request.GET.get('stock_id')
+        ipo = IPO.objects.get(stock_id=stock_id)
+        print(ipo.content, ipo.content2)
+    except Exception as tips:
+        print(tips)
+        return JsonResponse({'status': 0})
+    return JsonResponse({'status': 1, 'content': ipo.content, 'content2': ipo.content2})

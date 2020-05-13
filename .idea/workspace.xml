@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50153b6b-2f67-4748-874a-12955e952cd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/check_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/check_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/transactions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/transactions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,12 +199,16 @@
       <workItem from="1588213318830" duration="674000" />
       <workItem from="1589111212495" duration="1049000" />
       <workItem from="1589203337064" duration="678000" />
-      <workItem from="1589248942723" duration="123000" />
+      <workItem from="1589248942723" duration="7988000" />
+      <workItem from="1589332688758" duration="4580000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589203354435">
@@ -219,31 +224,31 @@
     </state>
     <state x="251" y="115" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585581185189" />
     <state x="294" y="136" key="FileChooserDialogImpl/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587647231613" />
-    <state width="1367" height="302" key="GridCell.Tab.0.bottom" timestamp="1589246383682">
+    <state width="1367" height="87" key="GridCell.Tab.0.bottom" timestamp="1589334190132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="302" key="GridCell.Tab.0.bottom/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589246383682" />
+    <state width="1367" height="87" key="GridCell.Tab.0.bottom/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589334190132" />
     <state width="1367" height="19" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589183954857" />
     <state width="1367" height="103" key="GridCell.Tab.0.bottom/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
     <state width="1601" height="150" key="GridCell.Tab.0.bottom/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1588069078985" />
-    <state width="1367" height="302" key="GridCell.Tab.0.center" timestamp="1589246383682">
+    <state width="1367" height="87" key="GridCell.Tab.0.center" timestamp="1589334190132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="302" key="GridCell.Tab.0.center/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589246383682" />
+    <state width="1367" height="87" key="GridCell.Tab.0.center/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589334190132" />
     <state width="1367" height="19" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589183954857" />
     <state width="1367" height="103" key="GridCell.Tab.0.center/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
     <state width="1601" height="150" key="GridCell.Tab.0.center/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1588069078984" />
-    <state width="1367" height="302" key="GridCell.Tab.0.left" timestamp="1589246383682">
+    <state width="1367" height="87" key="GridCell.Tab.0.left" timestamp="1589334190132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="302" key="GridCell.Tab.0.left/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589246383682" />
+    <state width="1367" height="87" key="GridCell.Tab.0.left/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589334190132" />
     <state width="1367" height="19" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589183954857" />
     <state width="1367" height="103" key="GridCell.Tab.0.left/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
     <state width="1601" height="150" key="GridCell.Tab.0.left/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1588069078984" />
-    <state width="1367" height="302" key="GridCell.Tab.0.right" timestamp="1589246383682">
+    <state width="1367" height="87" key="GridCell.Tab.0.right" timestamp="1589334190132">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1367" height="302" key="GridCell.Tab.0.right/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589246383682" />
+    <state width="1367" height="87" key="GridCell.Tab.0.right/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589334190132" />
     <state width="1367" height="19" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589183954857" />
     <state width="1367" height="103" key="GridCell.Tab.0.right/0.0.1600.870/113.900.1366.738@0.0.1600.870" timestamp="1585793083517" />
     <state width="1601" height="150" key="GridCell.Tab.0.right/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1588069078985" />
@@ -260,9 +265,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="237" y="24" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587563058658" />
-    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1587998227952">
-      <screen x="0" y="0" width="1600" height="870" />
+    <state x="395" y="154" width="672" height="576" key="search.everywhere.popup" timestamp="1589334395421">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="395" y="154" width="672" height="576" key="search.everywhere.popup/0.0.1366.738/-144.-900.1600.870@0.0.1366.738" timestamp="1589334395421" />
     <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/147.900.1366.738/0.0.1600.870@0.0.1600.870" timestamp="1587998227952" />
     <state x="522" y="346" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1587731980060">
       <screen x="0" y="0" width="1600" height="870" />
